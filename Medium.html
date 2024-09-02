@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium-like Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header-container {
+            background-color: #f5f5f5;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navigation-bar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navigation-bar li {
+            margin-right: 15px;
+        }
+
+        .navigation-bar a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .main-content {
+            display: flex;
+            padding: 20px;
+        }
+
+        .article {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+
+        .footer {
+            background-color: #f5f5f5;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo">Medium</div>
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">Topics</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <article class="article">
+            <h1>Article Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id orci orci.</p>
+        </article>
+        <aside class="sidebar">
+            <h2>Related Posts</h2>
+            <ul>
+                <li><a href="#">Related Post 1</a></li>
+                <li><a href="#">Related Post 2</a></li>
+                <li><a href="#">Related Post 3</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Medium-like Layout. All rights reserved.</p>
+    </footer>
+</body>
+</html>
