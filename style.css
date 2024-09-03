@@ -15,9 +15,23 @@ nav {
     text-align: center;
 }
 
-ul li {
+.ull, .lii {
     list-style-type: none;
     color: whitesmoke;
     display:inline-block;
     padding: 10px 20px;
+    text-align: center;
+
+}
+.email{
+    color:#0040df
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.card{
+    background-color: #f2f2f2;
 }
