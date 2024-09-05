@@ -2,81 +2,101 @@
 
 <html>
     <head>
-        <title>MSIT - Info Page</title>
-        <link rel="stylesheet" href="style.css">
+       <title>MSIT- Info page</title>
+       <link rel="stylesheet" href="style.css ">
     </head>
+
     <body>
-        <header>
-            <img src="msitlogo.png" class="logo">
-            <h1>Master of Science in Information Technology</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#Overview">Overview</a></li>
-                <li><a href="#curriculum">Curriculum</a></li>
-                <li><a href="#admission">Admission Requirement</a></li>
-                <li><a href="#contact">Contact us</a></li>
-            <ul>
-        </nav>
-        <section>
-            <section id="Overview">
-            <h2> Program Overview</h2>
-            <p> The MSIT program is designed to quip stydents with the skills and knowledge needed to excel in the field of information technology. Our cirriculum is tailored to meet the needs of both begginers an experinced professionals </p>
-            <header class="image">
-            <img src="image.png" id="overview">
-            </header>
-        </section>
-            <section id="curriculum">
-                <h2> Curriculam</h2>
-                <p> The Curriculam covers a wide range of topics, including</p>
-                <div class="Grid_containers">
-                    <div class="grid">
-                        <h3>Data Structures and Algorithms</h3>
-                        <p>Learn the foundational concepts of data structures and algorithms to build efficient systems.</p>
-                    </div>
-                    <div class="grid">
-                        <h3>Database Management Systems</h3>
-                        <p>Understand how to design and manage databases using SQL and NoSQL technologies.</p>
-                    </div>
-                    <div class="grid">
-                        <h3>Web Development</h3>
-                        <p>Explore front-end and back- end technologies to build dynamic, full-stack web applications.</p>
-                    </div>
-                    <div class="grid">
-                        <h3>Cloud Computing</h3>
-                        <p>Discover cloud platforms, virtualization, and containerization to deploy scalable applications.</p>
-                    </div>
-                    <div class="grid">
-                        <h3>Cybersecurity</h3>
-                        <p>Learn the essentials of protecting systems and data from malicious attacks and breaches.</p>
-                    </div>
-                    <div class="grid">
-                        <h3>Machine Learning</h3>
-                        <p>Learn the essentials of protecting systems and data from malicious attacks and breaches.</p>
-                    </div>
+        <!--Header-->
+        <section class="he">
+            <div class="overlay">
+                <div class="content">
+                    <h1>Welcome to MSIT Program</h1>
+                    <p>Your journey to mastering information technology starts here.</p>
+                    <button href="" class="button">Learn More</button>
                 </div>
+            </div>
+        </section>      
+            
+        <!--Navbar-->
+        <section class="bdy">
+            <nav>
+                <ul class="ulnav">
+                    <li class="linav"><a href="#programview" class="hyper">Overview </a></li>
+                    <li class="linav"><a href="#Curriculam" class="hyper">Curriculam </a></li>
+                    <li class="linav"><a href="#Admission" class="hyper">Admission Requirments </a></li>
+                    <li class="linav"><a href="#contcat" class="hyper">Contact us </a></li>
+                </ul>
+            </nav>
+        
+            <!--Program View-->
+            <section class="card" id="programview">
+              <h1> Program View</h1>
+             <p> The MSIT program is designed to quip stydents with the skills and knowledge needed to excel in the field of information technology. Our cirriculum is tailored to meet the needs of both begginers an experinced professionals </p>
+             <header>
+                <img src="image.png">
+             </header>
             </section>
-            <section id="admission">
-                <h1> Admission Requirements</h1>
-                <p1>To apply for the MSIT program, you will need:</p1>
+            <!--Curriculam-->
+            <section class="card">
+           
+                <h1> Curriculam</h1>
+                <section class="mancirr" id="Curriculam">
+                    <section class="cir"> <h3> Structures and Algorithms</h3>
+                         <p> Learn the foundational concepts of data structures and algorithms to build efficient systems. </p>
+                    </section>
+                    <section class="cir" >
+                         <h3>  Database Managment Systems </h3>
+                         <p> Understand how to design and manage databases using SQL and NoSQL technologies.</p>
+                    </section>
+                    <section class="cir">
+                        <h3> Web devlopment </h3>
+                        <p> Explore front-end back-end technologies to build dynamic, full-stack web applications</p>
+                    </section>
+                    <section class="cir">
+                        <h3> Cloud Computing</h3>
+                        <p> Discover cloud plotforms, virtulization and containerization to deploy scalable application.</p>
+                    </section>
+                    <section class="cir">
+                        <h3> Cyber security </h3>
+                        <p> Learn the essiantls of protecting systems and data from malicious attacks and breaches.</p>
+                    </section>
+                    <section class="cir"> 
+                        <h3> Machine Learning</h3>
+                        <p> Gain Knowledge  in meachine Learning algorithms and how to apply them to real world problems.</p>
+                    </section>
+                    
+                </section>
+               
+            </section>
+            <!--Admission requirments-->
+            <section class="card" id="Admission">
+                <h1> Admission Requirments</h1>
+                <p> To apply for the MSIT program, you will need:</p>
                 <ul>
                     <li> A bachelore's degree in a related field</li>
                     <li> official transcripts</li>
-                    <li> Resume/CV</li>
+                    <li> Resume/Cv</li>
                     <li> Statement of purpose</li>
                     <li> Two letters of recomondation</li>
+
                 </ul>
             </section>
-            <section id="contact">
+
+            <!--Contact US-->
+            <section class="card" id="contcat">
                 <h1> Contact US</h1>
                 <p> If you have any questions, feel free to reach out to us:</p>
                 <p> Email: <a href="" class="email">msit@university.edu</a></p>
                 <p> Phone: (0123)-456-789</p>
             </section>
-        </section>
-
-            <footer>
-                &copy; 2024 University Name.All rights reserved.
-            </footer>
-    </body>
+     </body>
+   
+        <!--Footer-->
+        <footer>
+            2024 University Name.All rights reserved.
+        </footer>
+            
+        
+    </section>
 </html>
