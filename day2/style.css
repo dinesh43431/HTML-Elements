@@ -96,7 +96,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: 50vh;
-    background-image: url('file:///C:/Users/hp/Desktop/Day-4/Computer_science_education.png');
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -111,7 +111,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(41, 41, 41, 0.9);
 }
 
 .hero-content {
