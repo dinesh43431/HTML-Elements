@@ -361,3 +361,117 @@ h3{
 .video {
     align-items: center;
 }
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar2 li {
+    margin: 0 15px;
+}
+
+.navbar2 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar2 a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-section {
+    background-color: white;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="date"], 
+textarea, 
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 10pc;
+    text-align: center;
+    
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* .Application { */
+    /* background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0; */
+/* } */
+
+.Header2 {
+    font-size: x-large;
+    color: #0044cb;
+    font-style: normal;
+}
