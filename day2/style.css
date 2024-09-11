@@ -28,7 +28,7 @@ nav ul li:hover {
     background-color: #0044cb
 }
 
-#curriculum {
+.curriculum {
     margin-bottom: 10px;
 }
 
@@ -92,19 +92,6 @@ footer {
     padding: 5px 20px;
 }
 
-.hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
 
 .overlay {
     position: absolute;
@@ -115,24 +102,8 @@ footer {
     background: rgba(41, 41, 41, 0.9);
 }
 
-.hero-content {
-    position: relative;
-    color: white;
-    text-align: center;
-    z-index: 1;
-}
 
-.hero-content h1 {
-    font-size: 3em;
-    margin-top: 0;
-}
-
-.hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-}
-
-.hero-content .btn {
+.btn {
     display: inline-block;
     padding: 15px 30px;
     background-color: #007BFF;
@@ -142,10 +113,10 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-.hero-content .btn:hover {
+.btn:hover {
     background-color: #0056b3;
 }
-#overview {
+.overview {
     max-height: 100%;
     margin-bottom: 10px;
     padding: 30px;
@@ -221,6 +192,7 @@ h1{
 nav{
     background-color: black;
     text-align: center;
+    width: flex;
     
     
 }
@@ -241,14 +213,14 @@ footer{
     text-align: center;
     padding: 20px;
 }
-.card{
+/* .card{
     background-color: white;
     border-radius: 5px;
     margin: 10px;
     padding: 20px;
     
     
-}
+} */
 .hyper{
     color: white;
     text-decoration: none;
@@ -262,7 +234,7 @@ footer{
     background-color: gray;
     border-radius: 5px;
 }
-.cir{
+/* .cir{
     background-color: #f2f2f2;
     border-radius: 5px;
     margin: 10px;
@@ -271,7 +243,7 @@ footer{
     width: 200px;
     text-align: center;
 
-}
+} */
 h3{
     color: blue;
     
@@ -286,28 +258,7 @@ h3{
     
     
 }
-.he {
-    position: relative;
-    background-image: linear-gradient(rgba(16, 10, 10, 0.796), rgba(0, 0, 0, 0.895)), url('https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png');
-    background-size: cover;
-    background-position: center;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
 
-.over {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .content {
     text-align: center;
@@ -474,4 +425,66 @@ button:hover {
     font-size: x-large;
     color: #0044cb;
     font-style: normal;
+}
+
+.slideshow-container {
+    position: relative;
+    width: flex;
+    height: 40vh; /* Full viewport height */
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 40vh; /* Full viewport height for each slide */
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide:nth-child(1) {
+    background-image: linear-gradient(rgba(57, 56, 56, 0.796), rgba(66, 66, 66, 0.895)), url('https://media.assettype.com/analyticsinsight/2024-07/7c0a6298-e8b7-4be4-9c0d-3aadfaedf8f5/Cutting_Edge_Technologies.jpg'); /* Update path */
+    animation: slideAnimation 12s infinite;
+}
+
+.slide:nth-child(2) {
+    background-image:linear-gradient(rgba(46, 45, 45, 0.947), rgba(44, 43, 43, 0.895)), url('https://media.licdn.com/dms/image/D4D12AQH32xxGmWJpPQ/article-cover_image-shrink_720_1280/0/1707827769250?e=2147483647&v=beta&t=qhhFRrKbtbCUUk-zh-VRFfReggudrg4xCvB7nvb-tbk');
+    animation: slideAnimation 12s 3s infinite;
+}
+
+.slide:nth-child(3) {
+    background-image:linear-gradient(rgba(46, 45, 45, 0.947), rgba(44, 43, 43, 0.895)), url('https://www.bluesky-pr.com/hs-fs/hubfs/lecturer.png?width=600&name=lecturer.png'); /* Update path */
+    animation: slideAnimation 12s 6s infinite;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    padding: 0 20px; /* Ensure text does not overflow */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+@keyframes slideAnimation {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    25% { opacity: 1; }
+    35% { opacity: 0; }
+    100% { opacity: 0; }
 }
